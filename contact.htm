@@ -4,12 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device--width, initial-sale=1.0">
         <title>Surafel Kassahun</title>
+        <link rel="icon" href="asset/image/favicon.png">
     </head>
     <body>
         <hr>
-        <a href="index.htm">Home</a> | 
-        <a href="contact.htm">Contact</a> | 
-        <a href="gallery.htm">Gallery</a>
+        <nav>
+            <a href="index.htm">Home</a> | 
+            <a href="contact.htm">Contact</a> | 
+            <a href="gallery.htm">Gallery</a>
+        </nav>
         <hr>
         <table cellspacing="10">
             <tr>
@@ -18,61 +21,77 @@
                   <h1>Surafel Kassahun</h1>
                   <h3>Major Software Engineering 2020</h3>
                   <p>
-                    Graduated highscool at Arba Minch Rehoboth school.
+                    Graduated highschool at Arba Minch Rehoboth school.
                     Currently pursuing software engineering at AAiT.
                   </p>
                 </td>
             </tr>
         </table>
         <h3>Contact us</h3>
-        <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=addis%20ababa%20institute%20of%20technology&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.divi-discounts.com"></a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+        
         <hr>
         <form action="mailto:se.surafel.kassahun@gmail.com">
             <table cellspacing="10">
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td> <label for="fName">First Name: </label> </td>
-                    <td> <input type="text" id="fName" required> </td>
+                    <td> <input type="text" id="fName" required pattern="[A-Za-z]{1,}"> </td>
+                    <td colspan="2" rowspan="7">
+                        <div class="mapouter">
+                            <div class="gmap_canvas">
+                                <iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=addis%20ababa%20institute%20of%20technology&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                <a href="https://www.divi-discounts.com"></a>
+                            </div>
+                            <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td> <label for="sName">Last Name: </label>  </td>
-                    <td> <input type="text" id="sName" required> </td>
+                    <td> <input type="text" id="sName" required pattern="[A-Za-z]{1,}"> </td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
+                    <td>Gender:</td>
+                    <td>
+                        <select name="gender">
+                            <option value="f">F</option>
+                            <option value="m">M</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
                     <td> <label for="email">Email: </label> </td>
                     <td> <input type="email" required> </td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td> Where are you from:</td>
-                    <td><select name="country" id="">
-                        <option value="Afria">Africa</option>
-                        <option value="Asia">Europe</option>
-                    </select></td>
+                    <td>
+                        <select name="country" id="">
+                            <option value="Ethiopia">Ethiopia</option>
+                            <option value="USA">USA</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="England">England</option>
+                        </select>
+                    </td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>Any Suggestions?</td>
-                    <td><textarea name="comment"></textarea> </td>
+                    <td><textarea name="comment" placeholder="Enter your suggestions here."></textarea></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit">
+                    </td>
                 </tr>
             </table>
-            
-            <input type="submit">
+        
         </form>
         <hr>
         <a href="">Facebook</a>
         <a href="">Telegram</a>
-        <a href="">Gmail</a>
-        <br>
-        <hr>
-        <p>Developed by Surafel Kassahun &copy;2020</p>
-        
+        <a href="">Gmail</a> <br>
+        <footer>
+            <p>Developed by Surafel Kassahun.</p>
+            <p>Copyright&copy;2020</p>
+        </footer>
     </body>
 </html>
