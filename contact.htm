@@ -4,74 +4,83 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device--width, initial-sale=1.0">
         <title>Surafel Kassahun</title>
-        <link rel="icon" href="asset/image/favicon.png">
+        <link rel="icon" href="asset/image/favicon.ico">
     </head>
     <body>
         <hr>
+        <center>
         <nav>
             <a href="index.htm">Home</a> | 
             <a href="contact.htm">Contact</a> | 
             <a href="gallery.htm">Gallery</a>
         </nav>
+        </center>
         <hr>
         <table cellspacing="10">
             <tr>
-                <td><img src="./asset/image/trial.jpg" alt="profile photo" width="200" height="200"></td>
+                <td><img src="./asset/image/trial.png" alt="profile photo" width="200" height="200"></td>
                 <td>
                   <h1>Surafel Kassahun</h1>
                   <h3>Major Software Engineering 2020</h3>
                   <p>
-                    Graduated highschool at Arba Minch Rehoboth school.
+                    Graduated highschool from Arba Minch Rehoboth school.<br>
                     Currently pursuing software engineering at AAiT.
                   </p>
                 </td>
             </tr>
         </table>
-        <h3>Contact us</h3>
-        
         <hr>
         <form action="mailto:se.surafel.kassahun@gmail.com">
             <table cellspacing="10">
                 <tr>
                     <td> <label for="fName">First Name: </label> </td>
-                    <td> <input type="text" id="fName" required pattern="[A-Za-z]{1,}"> </td>
-                    <td colspan="2" rowspan="7">
+                    <td> <input type="text" id="fName" required pattern="[A-Za-z]{2,}"> </td>
+                    <td rowspan="8">
                         <div class="mapouter">
                             <div class="gmap_canvas">
                                 <iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=addis%20ababa%20institute%20of%20technology&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                                 <a href="https://www.divi-discounts.com"></a>
                             </div>
-                            <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+                           <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
                         </div>
                     </td>
                 </tr>
                 <tr>
                     <td> <label for="sName">Last Name: </label>  </td>
-                    <td> <input type="text" id="sName" required pattern="[A-Za-z]{1,}"> </td>
+                    <td> <input type="text" id="sName" required pattern="[A-Za-z]{2,}"> </td>
                 </tr>
                 <tr>
-                    <td>Gender:</td>
+                    <td><label>Gender:</label></td>
                     <td>
-                        <select name="gender">
-                            <option value="f">F</option>
-                            <option value="m">M</option>
-                        </select>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male </label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female </label>
                     </td>
                 </tr>
                 <tr>
-                    <td> <label for="email">Email: </label> </td>
-                    <td> <input type="email" required> </td>
+                    <td> <label for="mail">Email: </label> </td>
+                    <td> <input type="email" id="mail" required> </td>
                 </tr>
                 <tr>
                     <td> Where are you from:</td>
                     <td>
                         <select name="country" id="">
+                            <option value="" disabled selected>--select--</option>
                             <option value="Ethiopia">Ethiopia</option>
                             <option value="USA">USA</option>
                             <option value="Mexico">Mexico</option>
                             <option value="England">England</option>
+                            <option value="India">India</option>
+                            <option value="Italy">Italy</option>
                         </select>
                     </td>
+                </tr>
+                <tr>
+                  <td><label for="slider">Rate my cv:</label></td>
+                  <td>
+                    <input id="slider" type="range" min="0" max=10 step="1">
+                  </td>
                 </tr>
                 <tr>
                     <td>Any Suggestions?</td>
@@ -83,15 +92,16 @@
                     </td>
                 </tr>
             </table>
-        
         </form>
+        <center>
         <hr>
-        <a href="">Facebook</a>
-        <a href="">Telegram</a>
-        <a href="">Gmail</a> <br>
+        <p><b>Contact me on: </b>
+        <a href=""> Facebook | </a>
+        <a href=""> Telegram | </a>
+        <a href=""> Gmail</a> </p>
         <footer>
-            <p>Developed by Surafel Kassahun.</p>
-            <p>Copyright&copy;2020</p>
+            <p>Developed by Surafel Kassahun Copyright&copy;2020</p>
         </footer>
+        </center>
     </body>
 </html>
